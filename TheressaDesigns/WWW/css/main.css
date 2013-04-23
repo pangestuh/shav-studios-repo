@@ -1,0 +1,222 @@
+
+body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, blockquote {
+	margin: 0; 
+	padding: 0;
+	border: 0;
+}
+
+body {
+	background: #fff9ea;
+	font-family: 'Roboto', sans-serif;
+	color: #654b13;
+}
+
+#container {
+	width: 1000px; 
+	margin: 0 auto;
+	text-align: center; 
+	overflow: hidden;
+	background-color:#FFF;
+	-moz-box-shadow: 2px 7px 17px #000000;
+	-webkit-box-shadow: 2px 7px 17px #000000;
+	box-shadow: 2px 7px 17px #000000;
+}
+
+#nav {
+	font-family: 'Roboto Regular', sans-serif;
+	font-size: 14px;
+}
+
+#nav ul {
+	list-style-type: none;
+	margin: 0 auto;
+}
+
+#nav ul > li {
+	float: left;
+	position: relative;
+	left: 50px;
+}
+
+#nav ul li > a {
+	text-decoration: none;
+	margin: 0px 32px;
+	color: #654b13;
+}
+
+#nav ul li a:hover, #nav ul li a.active {
+	color: #835e00;
+	text-decoration: underline;
+}
+
+#nav ul li ul {
+	min-width: 160px;
+	background-color:#FFF;
+	font-size: 12px;
+	top: 24px;
+	/*opacity:0.8;
+	filter:alpha(opacity=80);	*/
+	position: absolute;
+	text-transform: uppercase;
+	visibility: hidden;
+	z-index: 100;
+}
+
+#nav ul li ul li {
+	display: block;
+	text-align: left;
+	left: 0px;
+	padding: 12px 0px;
+	width: 100%;
+	height: 100%;
+}
+
+#nav ul li a.submenu:hover {
+	padding: 0px 0px 20px 0px;
+}
+
+#nav ul li a.submenu:hover + ul, #nav ul li ul:hover {
+	visibility: visible;
+}
+
+#nav ul li ul li a:hover {
+	text-decoration: underline;
+}
+
+/*.slider-wrapper {
+	display: block;
+	position: absolute;
+	left: 210px;
+}*/
+
+#content {
+	width: 800px;
+	min-height:500px;
+	margin: 0 auto;
+}
+
+h1 {
+	padding: 30px 0px 50px 0px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+h2 {
+	padding: 20px 0px 40px 0px;
+	text-align: left;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+#gallery {
+	width: 800px;
+	margin: 0px 0px 30px 0px;
+}
+
+#gallery ul {
+	list-style-type: none;
+	text-align: left;
+}
+
+#gallery ul li {
+	display: inline;
+}
+
+#gallery ul li img {
+	width: 185px;
+	height: 185px;
+	padding: 2px;
+}
+
+#gallery-content {
+	width: 100px;
+	}
+
+hr {
+	width: 70%;
+	noshade;
+	float: left;
+	display: block;
+	margin: 22px 0;
+}
+
+p {
+	text-align: left;
+	width: 800px;
+	font-family: 'Adobe Caslon Pro';
+	font-size: 15px;
+	margin: 0px 0px 20px 0px;
+}
+
+p.testimony {
+	text-align: left;
+	font-size: 14px;
+	width: 60%;
+}
+
+p#main {
+	text-align: left;
+	float: none;
+	margin:0 auto 30px; 
+	width: 500px;
+	font-family: 'Adobe Caslon Pro';
+	font-size: 16px;
+}
+
+img#about {
+	float: left;
+	display: inline;
+	width: 450px;
+	height: 300px;
+	padding: 0px 25px 10px 0px;
+}
+
+form#contact table {
+	padding: 20px;
+	border: 1px solid black;
+	width: 500px;
+	font-family: 'Adobe Caslon Pro';
+	font-size: 15px;		
+}
+
+#alteration {
+	float: left;
+	padding: 0px 20px 20px 0px;
+	width: 300px;
+}
+
+#services {
+	text-align: left;
+	font-family: 'Adobe Caslon Pro';
+	font-size: 15px;
+}
+
+form#contact {
+	padding: 0px 0px;
+}
+
+form#contact table td {
+	text-align: left;
+	vertical-align: top;
+}
+
+table#price-list {
+	text-align: left;
+	border: 1;
+	cellspacing: 1;
+	cellpadding: 1;
+	width: 100%;
+}
+
+#footer-bar {
+	padding: 8px 0px;
+}
+
+#footer {
+	min-height: 100px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   	font-weight: 300;
+	font-size: 14px;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Theressa Designs</title>
+	<link href="css/main.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Gilda+Display' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	<script src="lib/nivo-slider/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <script type="text/javascript">
+	$(window).load(function() {
+		$('#slider').nivoSlider({
+			effect: 'fade', // Specify sets like: 'fold,fade,sliceDown'
+			slices: 15, // For slice animations
+			boxCols: 8, // For box animations
+			boxRows: 4, // For box animations
+			animSpeed: 500, // Slide transition speed
+			pauseTime: 5000, // How long each slide will show
+			directionNav: false, // Next & Prev navigation
+			controlNav: true, // 1,2,3... navigation
+			controlNavThumbs: true, // Use thumbnails for Control Nav
+			pauseOnHover: false, // Stop animation while hovering
+			manualAdvance: false, // Force manual transitions
+			randomStart: true, // Start on a random slide
+			beforeChange: function(){}, // Triggers before a slide transition
+			afterChange: function(){}, // Triggers after a slide transition
+			slideshowEnd: function(){}, // Triggers after all slides have been shown
+			lastSlide: function(){}, // Triggers when last slide is shown
+			afterLoad: function(){} // Triggers when slider has loaded
+		});
+	});
+	</script>
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        <a href="index.html"><img src="images/logo.jpg" alt="Theressa Designs" /></a>
+    </div>
+    <div id="header-bar">
+    	<img src="images/top_bar.jpg" alt="Top Bar" />	
+    </div>
+    <div id="nav">
+        <ul>
+        	<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT US</a></li>
+					<li><a href="alterations.html">ALTERATIONS</a></li>
+					<li><a class="submenu" href="#">GALLERY</a>
+						<ul>
+							<li><a href="collections.html">Collections</a></li>
+							<li><a href="real_wedding.html">Real Wedding</a></li>
+						</ul>
+					</li>
+					<li><a href="testimonial.html">TESTIMONIALS</a></li>
+					<li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+    </div>
+    <div id="nav-bar">
+    	<img src="images/low_bar.jpg" alt="Low Bar" />
+    </div>
+    <div id="content">
+    	<div class="slider-wrapper">
+            <div id="slider" class="nivoSlider">
+                <img src="images/banner/1.jpg" alt="" title="" />
+                <img src="images/banner/2.jpg" alt="" title="" />
+                <img src="images/banner/3.jpg" alt="" title=""/>
+            </div>
+        </div>
+
+        <h1>Don't miss out on our grand opening sale!</h1>
+        <p id="main">
+We recently opened our store located at 1 Kearns Crescent, Ardross! We have a wide array of stocks for ready to wear wedding dresses, 
+bridesmaid dresses, school ball gowns and evening dresses. Visit our store to check out our range of selections.
+<br/><br/>
+If you cannot find what you are looking for, no problems! We can design the gown of your dreams especially for you.
+Not only that, we provide alteration services to ensure that you fit perfectly in your gowns.
+<br/><br/>
+From 27th April until 31st May, we provide 10% discount off custom made designs and up to 50% off ready to wear designs. Don't miss out!
+
+ 		</p>
+    </div>
+    <div id="footer-bar">
+    	<img src="images/footer_bar.jpg" alt="Low Bar" />
+    </div>
+    <div id="footer">
+        Copyright &copy; Theressa Designs 2013<br/>Website Design by Shav Studios. All Rights Reserved
+    </div>
+</div>
+</body>
+</html>

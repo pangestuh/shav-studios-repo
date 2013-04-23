@@ -1,0 +1,126 @@
+
+
+body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, blockquote {
+	margin: 0; padding: 0; border: 0;
+}
+
+body {
+	background: #d3cabb;
+}
+
+#container {
+	width: 980px;
+	margin: 0 auto;
+	background-color: white;
+}
+
+#header {
+	/*padding: 48px 16px 0 16px; */
+	/* overflow: hidden; */
+	position: relative;
+}
+
+#header h1 img {
+	/*display: block;*/
+	/* float: left;	*/
+}
+
+
+#header ul#nav {
+	position: absolute;	
+	right: 20px;
+	bottom: 35px;
+}
+
+#header ul#nav li {
+	display: inline;
+	list-style: none;	
+}
+
+#header ul#nav li a {
+	padding: 20px;
+	text-transform: uppercase; 
+	color: #000000;
+	font-size: 18px;
+	text-decoration: none;
+	font-family: 'Fjalla One', sans-serif;
+}
+
+#header ul#nav li a:hover {
+	color: #c09f66;	
+}
+
+#content {
+	margin: 0 auto;
+}
+
+#banner {
+
+}
+
+#banner img {
+	display: block;
+	margin: 0 auto;
+}
+
+#heading {
+	
+}
+
+#heading h1 {
+	text-align: center;
+	text-transform: uppercase;
+	margin: 30px 0 0 0;
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 70px;
+	letter-spacing: -0.05em;
+	color: #6e5320;
+}
+
+#heading h2 {
+	text-align: center;
+	font-family: 'Noto Sans', sans-serif;
+	font-style: italic;
+	margin-bottom: 20px;
+}
+
+#columns {
+	width: 938px;
+	/*position: relative;*/
+	margin: 0 auto;
+	height: 238px;
+}
+
+#columns img#wood {
+	/*position: absolute;
+	left: 0px;
+*/}
+
+#columns img#story {
+	float: right;
+}
+
+#preorder {
+	margin: 10px auto;
+}
+
+#preorder img {
+	display: block;
+	margin: 0 auto;
+}
+
+#footer > img {
+	margin: 0 auto; display: block;		
+}
+
+#footer #social {
+	width: 150px;
+	margin: 0 auto;
+}
+
+#footer p {
+	text-align: center;
+	font-family: 'Helvetica Light', sans-serif; 	
+	color: #6e5320;
+	padding: 20px 0px;
+}
