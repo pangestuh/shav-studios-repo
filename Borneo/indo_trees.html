@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Borneo</title>
+  <link href="css/main.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="http://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet" type="text/css" />
+  <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+	//  Fade out columns when moving mouse within document as long as you are not in columns
+	$(document).mousemove(
+		function(e) { 
+			if ($(e.target).closest("#tree-columns").length)
+			  return;
+			if ($(e.target).closest("#columns").length)
+			  return;
+			  
+			$('.toggler').children('img').not(':first-child').fadeOut();
+		}
+	);
+    $('.toggler img:first-child').mouseenter(function() {
+	  // clean all other except first-child
+	  $('.toggler').not($(this).parent()).children('img').not(':first-child').fadeOut();
+	  
+      $(this).parent().find("img:nth-child(2)").fadeIn();
+    });
+	$('.toggler img:nth-child(2)').mouseleave(function() {
+      $(this).fadeOut();
+    });
+	
+	$('.toggler img:nth-child(2)').click(function() {
+      $(this).parent().find("img:nth-child(3)").fadeIn();
+    });
+	$('.toggler img:nth-child(3)').mouseleave(function() {
+      $(this).fadeOut();
+    });
+	$('.toggler img:nth-child(3)').click(function() {
+      $(this).fadeOut();
+	  $(this).parent().find("img:nth-child(2)").fadeIn();	
+    });
+  });
+  </script>
+</head>
+<body>
+<div id="container">
+
+<div id="header">
+	<h1><img src="images/logo.jpg" alt="Logo" /></h1>
+	<ul id="nav">
+		<li><a href="index.html" class="active">HOME</a></li>
+		<li><a href="our_story.html">OUR STORY</a></li>
+		<li><a href="indo_trees.html">INDONESIAN TREES</a></li>
+		<li><a href="pre_order.html">PRE-ORDER</a></li>
+	</ul>
+</div>
+<div id="content">
+	<div id="heading">
+		<h1>Indonesian Trees,</h1>
+		<h2>Understand how we make the best<br/> out of our amazing nature.</h2>
+	</div>
+	<div id="tree-columns">
+        <div class="toggler">
+            <img class="wood1" src="images/pohon1.jpg" alt="Banner" />
+            <img class="wood1" src="images/hover_pohon1.jpg" alt="Banner" />
+            <img class="wood1" src="images/klik_pohon1.jpg" alt="Banner" />
+        </div>
+        <div class="toggler">
+            <img class="wood2" src="images/pohon2.jpg" alt="Banner" />
+            <img class="wood2" src="images/hover_pohon2.jpg" alt="Banner" />
+            <img class="wood2" src="images/klik_pohon2.jpg" alt="Banner" />
+        </div>
+        <div class="toggler">
+            <img class="wood3" src="images/pohon3.jpg" alt="Banner" />
+            <img class="wood3" src="images/hover_pohon3.jpg" alt="Banner" />
+            <img class="wood3" src="images/klik_pohon3.jpg" alt="Banner" />
+        </div>
+	</div>
+</div>
+<div id="footer">
+	<img src="images/footer_line.jpg" alt="Footer" />
+    <div id="social">
+    	<a href="#">
+        	<div class="toggler">
+        		<img src="images/fb.png" alt="fb" />
+            	<img src="images/hover_fb.png" alt="fb" />
+            </div>
+        </a>
+    	<a href="#">
+        	<div class="toggler">
+        		<img src="images/twitter.png" alt="in" />
+                <img src="images/hover_twitter.png" alt="in" />
+            </div>
+        </a>
+    	<a href="#">
+        	<div class="toggler">
+        		<img src="images/in.png" alt="tw" />
+                <img src="images/hover_in.png" alt="tw" />
+            </div>
+        </a>
+    </div>
+	<p>© COTTON INK 2011. All rights reserved.<br/>Terms and conditions. Site by Vendy Satria</p>
+</div>
+
+</div>
+</body>
+</html>

@@ -23,6 +23,8 @@ body {
 #header h1 img {
 	/*display: block;*/
 	/* float: left;	*/
+	position: relative;
+	left: 21px;	
 }
 
 
@@ -55,7 +57,7 @@ body {
 }
 
 #banner {
-
+	height: 311px;
 }
 
 #banner img {
@@ -72,7 +74,7 @@ body {
 	text-transform: uppercase;
 	margin: 30px 0 0 0;
 	font-family: 'Fjalla One', sans-serif;
-	font-size: 70px;
+	font-size: 62px;
 	letter-spacing: -0.05em;
 	color: #6e5320;
 }
@@ -91,36 +93,79 @@ body {
 	height: 238px;
 }
 
-#columns img#wood {
-	/*position: absolute;
-	left: 0px;
-*/}
+#tree-columns {
+	width: 865px;
+	/*position: relative;*/
+	margin: 0 auto;	
+	height: 657px;
+}
 
-#columns img#story {
-	float: right;
+#tree-columns img.wood2 {
+	left: 290px;
+}
+
+#tree-columns img.wood3 {
+	left: 580px;
+}
+
+.toggler { 
+	position: relative;
+}
+
+.toggler img {
+	position: absolute;	
+}
+
+.toggler img:nth-child(2), .toggler img:nth-child(3) {
+    display: none;
+}
+
+#columns img.wood {
+	
+}
+
+#columns img.story {
+	right: 0px;
 }
 
 #preorder {
 	margin: 10px auto;
+	position: relative;
+	width: 938px;
+	height: 191px;
 }
 
 #preorder img {
-	display: block;
-	margin: 0 auto;
+	position: absolute;
+}
+
+#footer {
+	padding-bottom: 60px;
 }
 
 #footer > img {
-	margin: 0 auto; display: block;		
+	margin: 0 auto; 
+	display: block;		
 }
 
 #footer #social {
-	width: 150px;
-	margin: 0 auto;
+	width: 138px;
+	height: 36px;
+	margin: 10px auto;
+}
+
+#footer #social a {
+	float: left;
+	height: 36px;
+	width: 36px;
+	border-radius: 18px;
+	margin: 0 5px;
 }
 
 #footer p {
 	text-align: center;
-	font-family: 'Helvetica Light', sans-serif; 	
+	font-family: 'Helvetica Light', sans-serif;
+	font-size: 12px; 	
 	color: #6e5320;
-	padding: 20px 0px;
+	margin: 28px;
 }
